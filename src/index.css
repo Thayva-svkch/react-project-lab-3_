@@ -193,3 +193,59 @@ font-size: 0.9rem;
 text-align: center;
 padding: 0.6rem 0;
 }
+
+/* Lab 4: search bar + filter buttons */
+.search-row {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: var(--panel-2);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 0.55rem 0.9rem;
+}
+.search-row .icon {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+.search-row input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  color: var(--text);
+  font-family: inherit;
+  font-size: 0.95rem;
+  padding: 0;
+}
+.search-row input::placeholder {
+  color: var(--muted);
+}
+.search-row input:focus {
+  outline: none;
+}
+.filter-row {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.8rem;
+}
+.filter-btn {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.78rem;
+  font-weight: 600;
+  background: var(--panel-2);
+  color: var(--muted);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.4rem 0.95rem;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.filter-btn:hover {
+  border-color: var(--mint-dim);
+  color: var(--text);
+}
+.filter-btn.active {
+  background: var(--mint-dim);
+  color: #0a1a17;
+  border-color: var(--mint-dim);
+}
